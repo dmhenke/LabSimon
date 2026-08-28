@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simon Lab — Computational Biology, THINC @ Baylor College of Medicine</title>
+<meta name="description" content="The Simon Lab develops machine learning and single-cell genomics methods for RNA therapeutic discovery at the Therapeutic Innovation Center, Baylor College of Medicine.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#129516;</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top">Simon&nbsp;Lab</a>
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#software">Software</a>
+    <a href="#publications">Publications</a>
+    <a href="#people">People</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Computational Biology Group · Therapeutic Innovation Center · Baylor College of Medicine</p>
+    <h1>Turning complex molecular data into RNA therapeutics.</h1>
+    <p class="lede">We build machine learning and single-cell genomics methods that read biology at scale &mdash; and we point them at a single question: which molecular vulnerability can be drugged next?</p>
+    <p class="links">
+      <a class="btn" href="#research">Research</a>
+      <a class="btn ghost" href="https://scholar.google.de/citations?user=yZ2MXf0AAAAJ&amp;hl=en">Google&nbsp;Scholar</a>
+      <a class="btn ghost" href="https://github.com/lkmklsmn">GitHub</a>
+      <a class="btn ghost" href="mailto:Lukas.Simon@bcm.edu">Email</a>
+    </p>
+  </div>
+  <aside class="hero-card">
+    <h2>Lukas &ldquo;Miko&rdquo; Simon, PhD</h2>
+    <p class="role">Assistant Professor, Verna &amp; Marrs McLean Department of Biochemistry and Molecular Pharmacology<br>
+    Group Leader, Computational Biology &mdash; THINC@BCM</p>
+    <dl class="facts">
+      <dt>Training</dt><dd>PhD, Structural &amp; Computational Biology and Molecular Biophysics, Baylor College of Medicine (2016). Postdoc with Fabian Theis, Institute of Computational Biology, Helmholtz Zentrum M&uuml;nchen.</dd>
+      <dt>Profiles</dt><dd>
+        <a href="https://www.bcm.edu/people-search/lukas-simon-53766">BCM</a> ·
+        <a href="https://thincbcm.org/therapeutic">THINC</a> ·
+        <a href="https://github.com/lkmklsmn">GitHub</a> ·
+        <a href="https://scholar.google.de/citations?user=yZ2MXf0AAAAJ&amp;hl=en">Scholar</a> ·
+        <a href="https://www.linkedin.com/in/lukas-simon-016a9736/">LinkedIn</a> ·
+        <a href="https://x.com/lkmklsmn">X</a>
+      </dd>
+    </dl>
+  </aside>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <p class="section-lede">THINC is a BCM center of excellence whose mission is to bridge cutting-edge RNA basic science with early-stage drug discovery. Our group supplies the computational half of that bridge: methods for complex molecular data, built to survive contact with a real therapeutic program.</p>
+  <div class="grid">
+    <article class="card">
+      <h3>RNA splicing as a therapeutic vulnerability</h3>
+      <p>MYC-hyperactivated tumours place a collateral burden on the spliceosome, making core splicing factors a synthetic-lethal entry point. This line of work traced that vulnerability from a genome-wide screen to a clinical-stage drug program, and showed that spliceosome-targeted therapy also triggers an antiviral immune response in triple-negative breast cancer.</p>
+      <p class="ref"><a href="https://doi.org/10.1038/nature14985">Nature 2015</a> · <a href="https://doi.org/10.1016/j.cell.2020.12.031">Cell 2021</a></p>
+    </article>
+    <article class="card">
+      <h3>Deep learning for single-cell genomics</h3>
+      <p>Single-cell measurements are sparse, noisy and batch-confounded. We design neural architectures that model those artefacts explicitly &mdash; count-based denoising autoencoders, triplet networks for dataset integration, positive-unlabelled learning for empty droplets &mdash; rather than smoothing them away and hoping.</p>
+      <p class="ref"><a href="https://doi.org/10.1038/s41467-018-07931-2">Nat Commun 2019</a> · <a href="https://doi.org/10.1016/j.patter.2021.100311">Patterns 2021</a></p>
+    </article>
+    <article class="card">
+      <h3>Biomarker and target discovery</h3>
+      <p>Functional genomic screens and clinical omics answer different questions and disagree often. We integrate them &mdash; bio-primed machine learning, cell-type deconvolution, mitochondrial variant tracing &mdash; to nominate targets and response biomarkers that hold up outside the discovery cohort.</p>
+      <p class="ref"><a href="https://doi.org/10.1038/s41698-025-00825-9">npj Precis Oncol 2025</a> · <a href="https://doi.org/10.3390/genes14061222">Genes 2023</a></p>
+    </article>
+    <article class="card">
+      <h3>Multi-omic atlases of tissue and disease</h3>
+      <p>Long-running collaborations map cell states in lung ageing and fibrosis, craniofacial development, Alzheimer's disease and drug-resistant lymphoma &mdash; single-cell and single-nucleus multiome data read for the regulatory programs that separate a resilient cell from a persister.</p>
+      <p class="ref"><a href="https://doi.org/10.1038/s41467-019-08831-9">Nat Commun 2019</a> · <a href="https://doi.org/10.1126/sciadv.adw4917">Sci Adv 2025</a></p>
+    </article>
+  </div>
+</section>
+
+<section id="software">
+  <h2>Software</h2>
+  <p class="section-lede">Methods are released as open source at <a href="https://github.com/lkmklsmn">github.com/lkmklsmn</a>. Each tool below has an accompanying peer-reviewed paper.</p>
+  <div class="grid tools">
+    <article class="card tool">
+      <h3><a href="https://github.com/lkmklsmn/insct">INSCT</a></h3>
+      <p>scRNA-seq integration with triplet neural networks &mdash; batch correction that scales to millions of cells.</p>
+      <p class="ref">Python</p>
+    </article>
+    <article class="card tool">
+      <h3><a href="https://github.com/lkmklsmn/empty_nn">EmptyNN</a></h3>
+      <p>Positive-unlabelled neural network that removes empty and damaged droplets from droplet-based scRNA-seq.</p>
+      <p class="ref">R · <a href="https://doi.org/10.1016/j.patter.2021.100311">Patterns 2021</a></p>
+    </article>
+    <article class="card tool">
+      <h3><a href="https://github.com/lkmklsmn/MitoTrace">MitoTrace</a></h3>
+      <p>Mitochondrial variant calling from scRNA-seq reads for lineage tracing and sample demultiplexing.</p>
+      <p class="ref">R · <a href="https://doi.org/10.3390/genes14061222">Genes 2023</a></p>
+    </article>
+    <article class="card tool">
+      <h3><a href="https://github.com/lkmklsmn/DrivAER">DrivAER</a></h3>
+      <p>Autoencoder-based relevance scores that rank the transcriptional programs driving a cellular trajectory.</p>
+      <p class="ref">Python · <a href="https://doi.org/10.1093/gigascience/giaa122">GigaScience 2020</a></p>
+    </article>
+    <article class="card tool">
+      <h3><a href="https://github.com/theislab/dca">DCA</a></h3>
+      <p>Deep count autoencoder for scRNA-seq denoising (co-developed at Helmholtz Munich).</p>
+      <p class="ref">Python · <a href="https://doi.org/10.1038/s41467-018-07931-2">Nat Commun 2019</a></p>
+    </article>
+    <article class="card tool">
+      <h3><a href="https://github.com/lkmklsmn/SplicER">SplicER</a></h3>
+      <p>Splicing-efficiency quantification from RNA-seq, the analytic backbone of our splicing work.</p>
+      <p class="ref">Python</p>
+    </article>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <p class="section-lede">Selected peer-reviewed work and preprints, retrieved from PubMed. The complete list, with citation metrics, is on <a href="https://scholar.google.de/citations?user=yZ2MXf0AAAAJ&amp;hl=en">Google Scholar</a>.</p>
+<!-- 39 entries -->
+  <h3 class="year">2026</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">Dissecting Pirtobrutinib Resistance in Mantle Cell Lymphoma Through Single-Cell Multi-Omics</span>
+      <span class="pauth">Yan F, Liu Y, Lee HH, Wang W, McIntosh J, …, <b>Simon LM</b>, Wang M</span>
+      <span class="pmeta"><i>Am J Hematol</i> (2026) · <a href="https://pubmed.ncbi.nlm.nih.gov/41998849/">PubMed</a> · <a href="https://doi.org/10.1002/ajh.70304">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2025</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">TCA cycle mode switch determines the fate of pirtobrutinib-tolerant persister cells in mantle cell lymphoma</span>
+      <span class="pauth">Wang W, Cai Q, Liu Y, Nie L, Lee HH, …, <b>Simon LM</b>, …, Wang M</span>
+      <span class="pmeta"><i>Blood</i> (2025) · <a href="https://pubmed.ncbi.nlm.nih.gov/40700581/">PubMed</a> · <a href="https://doi.org/10.1182/blood.2024026919">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Single-cell multiome characterizing intercellular communication and intracellular regulation of epithelium and mesenchymal during secondary palate development in mice</span>
+      <span class="pauth">Hussein U, Dai Y, Liu A, Itai T, Yan F, <b>Simon LM</b>, Zhao Z</span>
+      <span class="pmeta"><i>Comput Struct Biotechnol J</i> (2025) · <a href="https://pubmed.ncbi.nlm.nih.gov/41127818/">PubMed</a> · <a href="https://doi.org/10.1016/j.csbj.2025.09.031">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Bio-primed machine learning to enhance discovery of relevant biomarkers</span>
+      <span class="pauth">Henke DM, Renwick A, Zoeller JR, Meena JK, Neill NJ, …, <b>Simon LM</b></span>
+      <span class="pmeta"><i>NPJ Precis Oncol</i> (2025) · <a href="https://pubmed.ncbi.nlm.nih.gov/39915634/">PubMed</a> · <a href="https://doi.org/10.1038/s41698-025-00825-9">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Let-7 restrains an epigenetic circuit in AT2 cells to prevent fibrogenic intermediates in pulmonary fibrosis</span>
+      <span class="pauth">Seasock MJ, Shafiquzzaman M, Ruiz-Echartea ME, Kanchi RS, Tran BT, <b>Simon LM</b>, …, Rodriguez A</span>
+      <span class="pmeta"><i>Nat Commun</i> (2025) · <a href="https://pubmed.ncbi.nlm.nih.gov/40348760/">PubMed</a> · <a href="https://doi.org/10.1038/s41467-025-59641-1">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Single-nucleus multiomics reveals the disrupted regulatory programs in three brain regions of sporadic early-onset Alzheimer&#x27;s disease</span> <span class="tag hl">Highlight</span>
+      <span class="pauth">Liu A, Citu C, Enduru N, Chen X, Tung CH, …, <b>Simon LM</b>, …, Zhao Z</span>
+      <span class="pmeta"><i>Sci Adv</i> (2025) · <a href="https://pubmed.ncbi.nlm.nih.gov/41406216/">PubMed</a> · <a href="https://doi.org/10.1126/sciadv.adw4917">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">FADVI: disentangled representation learning for robust integration of single-cell and spatial omics data</span> <span class="tag">Preprint</span>
+      <span class="pauth">Liu W, Qu G, <b>Simon LM</b>, Theis FJ, Zhao Z</span>
+      <span class="pmeta"><i>bioRxiv</i> (2025) · <a href="https://pubmed.ncbi.nlm.nih.gov/41278629/">PubMed</a> · <a href="https://doi.org/10.1101/2025.11.03.683998">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2024</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">MYC Induces Oncogenic Stress through RNA Decay and Ribonucleotide Catabolism in Breast Cancer</span>
+      <span class="pauth">Meena JK, Wang JH, Neill NJ, Keough D, Putluri N, …, <b>Simon LM</b>, …, Westbrook TF</span>
+      <span class="pmeta"><i>Cancer Discov</i> (2024) · <a href="https://pubmed.ncbi.nlm.nih.gov/39193992/">PubMed</a> · <a href="https://doi.org/10.1158/2159-8290.CD-22-0649">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">The HSP90-MYC-CDK9 network drives therapeutic resistance in mantle cell lymphoma</span>
+      <span class="pauth">Yan F, Jiang V, Jordan A, Che Y, Liu Y, …, <b>Simon LM</b>, Wang M</span>
+      <span class="pmeta"><i>Exp Hematol Oncol</i> (2024) · <a href="https://pubmed.ncbi.nlm.nih.gov/38326887/">PubMed</a> · <a href="https://doi.org/10.1186/s40164-024-00484-9">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Leveraging Integrated RNA Sequencing to Decipher Adrenomedullin&#x27;s Protective Mechanisms in Experimental Bronchopulmonary Dysplasia</span>
+      <span class="pauth">Palit S, Shrestha AK, Thapa S, L Grimm S, Coarfa C, …, <b>Simon LM</b>, Shivanna B</span>
+      <span class="pmeta"><i>Genes (Basel)</i> (2024) · <a href="https://pubmed.ncbi.nlm.nih.gov/38927741/">PubMed</a> · <a href="https://doi.org/10.3390/genes15060806">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Investigating gene functions and single-cell expression profiles of de novo variants in orofacial clefts</span>
+      <span class="pauth">Itai T, Yan F, Liu A, Dai Y, Iwaya C, …, <b>Simon LM</b>, …, Zhao Z</span>
+      <span class="pmeta"><i>HGG Adv</i> (2024) · <a href="https://pubmed.ncbi.nlm.nih.gov/38807368/">PubMed</a> · <a href="https://doi.org/10.1016/j.xhgg.2024.100313">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">DeepFace: Deep-learning-based framework to contextualize orofacial-cleft-related variants during human embryonic craniofacial development</span>
+      <span class="pauth">Dai Y, Itai T, Pei G, Yan F, Chu Y, …, <b>Simon LM</b>, …, Zhao Z</span>
+      <span class="pmeta"><i>HGG Adv</i> (2024) · <a href="https://pubmed.ncbi.nlm.nih.gov/38796699/">PubMed</a> · <a href="https://doi.org/10.1016/j.xhgg.2024.100312">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Single-cell multiomics decodes regulatory programs for mouse secondary palate development</span>
+      <span class="pauth">Yan F, Suzuki A, Iwaya C, Pei G, Chen X, …, <b>Simon LM</b>, …, Zhao Z</span>
+      <span class="pmeta"><i>Nat Commun</i> (2024) · <a href="https://pubmed.ncbi.nlm.nih.gov/38280850/">PubMed</a> · <a href="https://doi.org/10.1038/s41467-024-45199-x">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2023</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">MitoTrace: A Computational Framework for Analyzing Mitochondrial Variation in Single-Cell RNA Sequencing Data</span>
+      <span class="pauth">Wang M, Deng W, Samuels DC, Zhao Z, <b>Simon LM</b></span>
+      <span class="pmeta"><i>Genes (Basel)</i> (2023) · <a href="https://pubmed.ncbi.nlm.nih.gov/37372402/">PubMed</a> · <a href="https://doi.org/10.3390/genes14061222">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Microbial fingerprints reveal interaction between museum objects, curators, and visitors</span>
+      <span class="pauth"><b>Simon LM</b>, Flocco C, Burkart F, Methner A, Henke D, …, Simon S</span>
+      <span class="pmeta"><i>iScience</i> (2023) · <a href="https://pubmed.ncbi.nlm.nih.gov/37664629/">PubMed</a> · <a href="https://doi.org/10.1016/j.isci.2023.107578">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2022</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">Acute depletion of human core nucleoporin reveals direct roles in transcription control but dispensability for 3D genome organization</span>
+      <span class="pauth">Zhu X, Qi C, Wang R, Lee JH, Shao J, …, <b>Simon LM</b>, …, Li W</span>
+      <span class="pmeta"><i>Cell Rep</i> (2022) · <a href="https://pubmed.ncbi.nlm.nih.gov/36323253/">PubMed</a> · <a href="https://doi.org/10.1016/j.celrep.2022.111576">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">deCS: A Tool for Systematic Cell Type Annotations of Single-cell RNA Sequencing Data among Human Tissues</span>
+      <span class="pauth">Pei G, Yan F, <b>Simon LM</b>, Dai Y, Jia P, Zhao Z</span>
+      <span class="pmeta"><i>Genomics Proteomics Bioinformatics</i> (2022) · <a href="https://pubmed.ncbi.nlm.nih.gov/35470070/">PubMed</a> · <a href="https://doi.org/10.1016/j.gpb.2022.04.001">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Spatiotemporal MicroRNA-Gene Expression Network Related to Orofacial Clefts</span>
+      <span class="pauth">Yan F, <b>Simon LM</b>, Suzuki A, Iwaya C, Jia P, Iwata J, Zhao Z</span>
+      <span class="pmeta"><i>J Dent Res</i> (2022) · <a href="https://pubmed.ncbi.nlm.nih.gov/35774010/">PubMed</a> · <a href="https://doi.org/10.1177/00220345221105816">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2021</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">Spliceosome-targeted therapies trigger an antiviral immune response in triple-negative breast cancer</span> <span class="tag hl">Highlight</span>
+      <span class="pauth">Bowling EA, Wang JH, Gong F, Wu W, Neill NJ, …, <b>Simon LM</b>, …, Westbrook TF</span>
+      <span class="pmeta"><i>Cell</i> (2021) · <a href="https://pubmed.ncbi.nlm.nih.gov/33450205/">PubMed</a> · <a href="https://doi.org/10.1016/j.cell.2020.12.031">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Integrative analysis of cell state changes in lung fibrosis with peripheral protein biomarkers</span>
+      <span class="pauth">Mayr CH, <b>Simon LM</b>, Leuschner G, Ansari M, Schniering J, …, Schiller HB</span>
+      <span class="pmeta"><i>EMBO Mol Med</i> (2021) · <a href="https://pubmed.ncbi.nlm.nih.gov/33650774/">PubMed</a> · <a href="https://doi.org/10.15252/emmm.202012871">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Investigating Cellular Trajectories in the Severity of COVID-19 and Their Transcriptional Programs Using Machine Learning Approaches</span>
+      <span class="pauth">Jeong HH, Jia J, Dai Y, <b>Simon LM</b>, Zhao Z</span>
+      <span class="pmeta"><i>Genes (Basel)</i> (2021) · <a href="https://pubmed.ncbi.nlm.nih.gov/33923155/">PubMed</a> · <a href="https://doi.org/10.3390/genes12050635">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">EmptyNN: A neural network based on positive and unlabeled learning to remove cell-free droplets and recover lost cells in scRNA-seq data</span>
+      <span class="pauth">Yan F, Zhao Z, <b>Simon LM</b></span>
+      <span class="pmeta"><i>Patterns (N Y)</i> (2021) · <a href="https://pubmed.ncbi.nlm.nih.gov/34430929/">PubMed</a> · <a href="https://doi.org/10.1016/j.patter.2021.100311">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2020</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">Charting Extracellular Transcriptomes in The Human Biofluid RNA Atlas</span>
+      <span class="pauth">Hulstaert E, Morlion A, Avila Cobos F, Verniers K, Nuytens J, …, <b>Simon LM</b>, …, Mestdagh P</span>
+      <span class="pmeta"><i>Cell Rep</i> (2020) · <a href="https://pubmed.ncbi.nlm.nih.gov/33378673/">PubMed</a> · <a href="https://doi.org/10.1016/j.celrep.2020.108552">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Gene expression imputation and cell-type deconvolution in human brain with spatiotemporal precision and its implications for brain-related disorders</span>
+      <span class="pauth">Pei G, Wang YY, <b>Simon LM</b>, Dai Y, Zhao Z, Jia P</span>
+      <span class="pmeta"><i>Genome Res</i> (2020) · <a href="https://pubmed.ncbi.nlm.nih.gov/33272935/">PubMed</a> · <a href="https://doi.org/10.1101/gr.265769.120">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">DrivAER: Identification of driving transcriptional programs in single-cell RNA sequencing data</span>
+      <span class="pauth"><b>Simon LM</b>, Yan F, Zhao Z</span>
+      <span class="pmeta"><i>Gigascience</i> (2020) · <a href="https://pubmed.ncbi.nlm.nih.gov/33301553/">PubMed</a> · <a href="https://doi.org/10.1093/gigascience/giaa122">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Alveolar regeneration through a Krt8+ transitional stem cell state that persists in human lung fibrosis</span> <span class="tag hl">Highlight</span>
+      <span class="pauth">Strunz M, <b>Simon LM</b>, Ansari M, Kathiriya JJ, Angelidis I, …, Schiller HB</span>
+      <span class="pmeta"><i>Nat Commun</i> (2020) · <a href="https://pubmed.ncbi.nlm.nih.gov/32678092/">PubMed</a> · <a href="https://doi.org/10.1038/s41467-020-17358-3">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2019</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">The Human Lung Cell Atlas: A High-Resolution Reference Map of the Human Lung in Health and Disease</span>
+      <span class="pauth">Schiller HB, Montoro DT, <b>Simon LM</b>, Rawlins EL, Meyer KB, …, Nawijn MC</span>
+      <span class="pmeta"><i>Am J Respir Cell Mol Biol</i> (2019) · <a href="https://pubmed.ncbi.nlm.nih.gov/30995076/">PubMed</a> · <a href="https://doi.org/10.1165/rcmb.2018-0416TR">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Longitudinal RNA-Seq Analysis of the Repeatability of Gene Expression and Splicing in Human Platelets Identifies a PlateletSplice QTL</span>
+      <span class="pauth">Rondina MT, Voora D, <b>Simon LM</b>, Schwertz H, Harper JF, …, Rowley JW</span>
+      <span class="pmeta"><i>Circ Res</i> (2019) · <a href="https://pubmed.ncbi.nlm.nih.gov/31852401/">PubMed</a> · <a href="https://doi.org/10.1161/CIRCRESAHA.119.315215">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells</span> <span class="tag hl">Highlight</span>
+      <span class="pauth">Wolf FA, Hamey FK, Plass M, Solana J, Dahlin JS, …, <b>Simon L</b>, Theis FJ</span>
+      <span class="pmeta"><i>Genome Biol</i> (2019) · <a href="https://pubmed.ncbi.nlm.nih.gov/30890159/">PubMed</a> · <a href="https://doi.org/10.1186/s13059-019-1663-x">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Targeting the Mevalonate Pathway to Overcome Acquired Anti-HER2 Treatment Resistance in Breast Cancer</span>
+      <span class="pauth">Sethunath V, Hu H, De Angelis C, Veeraraghavan J, Qin L, …, <b>Simon LM</b>, …, Schiff R</span>
+      <span class="pmeta"><i>Mol Cancer Res</i> (2019) · <a href="https://pubmed.ncbi.nlm.nih.gov/31420371/">PubMed</a> · <a href="https://doi.org/10.1158/1541-7786.MCR-19-0756">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">An atlas of the aging lung mapped by single cell transcriptomics and deep tissue proteomics</span> <span class="tag hl">Highlight</span>
+      <span class="pauth">Angelidis I, <b>Simon LM</b>, Fernandez IE, Strunz M, Mayr CH, …, Schiller HB</span>
+      <span class="pmeta"><i>Nat Commun</i> (2019) · <a href="https://pubmed.ncbi.nlm.nih.gov/30814501/">PubMed</a> · <a href="https://doi.org/10.1038/s41467-019-08831-9">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">Single-cell RNA-seq denoising using a deep count autoencoder</span> <span class="tag hl">Highlight</span>
+      <span class="pauth">Eraslan G, <b>Simon LM</b>, Mircea M, Mueller NS, Theis FJ</span>
+      <span class="pmeta"><i>Nat Commun</i> (2019) · <a href="https://pubmed.ncbi.nlm.nih.gov/30674886/">PubMed</a> · <a href="https://doi.org/10.1038/s41467-018-07931-2">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">A cellular census of human lungs identifies novel cell states in health and in asthma</span>
+      <span class="pauth">Vieira Braga FA, Kar G, Berg M, Carpaij OA, Polanski K, <b>Simon LM</b>, …, Teichmann SA</span>
+      <span class="pmeta"><i>Nat Med</i> (2019) · <a href="https://pubmed.ncbi.nlm.nih.gov/31209336/">PubMed</a> · <a href="https://doi.org/10.1038/s41591-019-0468-5">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2018</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">Effects of genetic variation in protease activated receptor 4 after an acute coronary syndrome: Analysis from the TRACER trial</span>
+      <span class="pauth">Tricoci P, Neely M, Whitley MJ, Edelstein LC, <b>Simon LM</b>, …, Bray PF</span>
+      <span class="pmeta"><i>Blood Cells Mol Dis</i> (2018) · <a href="https://pubmed.ncbi.nlm.nih.gov/30055940/">PubMed</a> · <a href="https://doi.org/10.1016/j.bcmd.2018.07.004">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">MetaMap: an atlas of metatranscriptomic reads in human disease-related RNA-seq data</span>
+      <span class="pauth"><b>Simon LM</b>, Karg S, Westermann AJ, Engel M, Elbehery AHA, …, Theis FJ</span>
+      <span class="pmeta"><i>Gigascience</i> (2018) · <a href="https://pubmed.ncbi.nlm.nih.gov/29901703/">PubMed</a> · <a href="https://doi.org/10.1093/gigascience/giy070">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">The protease-activated receptor 4 Ala120Thr variant alters platelet responsiveness to low-dose thrombin and protease-activated receptor 4 desensitization, and is blocked by non-competitive P2Yinhibition</span>
+      <span class="pauth">Whitley MJ, Henke DM, Ghazi A, Nieman M, Stoller M, <b>Simon LM</b>, …, Bray PF</span>
+      <span class="pmeta"><i>J Thromb Haemost</i> (2018) · <a href="https://pubmed.ncbi.nlm.nih.gov/30347494/">PubMed</a> · <a href="https://doi.org/10.1111/jth.14318">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2017</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">EMT cells increase breast cancer metastasis via paracrine GLI activation in neighbouring tumour cells</span>
+      <span class="pauth">Neelakantan D, Zhou H, Oliphant MUJ, Zhang X, <b>Simon LM</b>, …, Ford HL</span>
+      <span class="pmeta"><i>Nat Commun</i> (2017) · <a href="https://pubmed.ncbi.nlm.nih.gov/28604738/">PubMed</a> · <a href="https://doi.org/10.1038/ncomms15773">DOI</a></span>
+    </li>
+    <li>
+      <span class="ptitle">A paradox of transcriptional and functional innate interferon responses of human intestinal enteroids to enteric virus infection</span>
+      <span class="pauth">Saxena K, <b>Simon LM</b>, Zeng XL, Blutt SE, Crawford SE, …, Estes MK</span>
+      <span class="pmeta"><i>Proc Natl Acad Sci U S A</i> (2017) · <a href="https://pubmed.ncbi.nlm.nih.gov/28069942/">PubMed</a> · <a href="https://doi.org/10.1073/pnas.1615422114">DOI</a></span>
+    </li>
+  </ul>
+  <h3 class="year">2015</h3>
+  <ul class="pubs">
+    <li>
+      <span class="ptitle">The spliceosome is a therapeutic vulnerability in MYC-driven cancer</span> <span class="tag hl">Highlight</span>
+      <span class="pauth">Hsu TY, <b>Simon LM</b>, Neill NJ, Marcotte R, Sayad A, …, Westbrook TF</span>
+      <span class="pmeta"><i>Nature</i> (2015) · <a href="https://pubmed.ncbi.nlm.nih.gov/26331541/">PubMed</a> · <a href="https://doi.org/10.1038/nature14985">DOI</a></span>
+    </li>
+  </ul>
+</section>
+
+<section id="people">
+  <h2>People</h2>
+  <div class="grid people">
+    <article class="card person">
+      <div class="avatar" aria-hidden="true">LS</div>
+      <h3>Lukas &ldquo;Miko&rdquo; Simon, PhD</h3>
+      <p class="role">Principal Investigator</p>
+      <p>Assistant Professor in the Verna &amp; Marrs McLean Department of Biochemistry and Molecular Pharmacology and Group Leader of Computational Biology at THINC@BCM. Trained in bioinformatics at Baylor College of Medicine and in machine learning for single-cell genomics with Fabian Theis at Helmholtz Zentrum M&uuml;nchen.</p>
+      <p class="ref"><a href="mailto:Lukas.Simon@bcm.edu">Lukas.Simon@bcm.edu</a></p>
+    </article>
+    <!-- Add a member: copy the article block above, swap initials, name, role and blurb. -->
+    <article class="card join">
+      <h3>Join the group</h3>
+      <p>We host graduate students, postdoctoral fellows and computational staff working at the seam between method development and drug discovery. Strong programming (Python/R), a statistics habit, and interest in RNA biology matter more than a specific background.</p>
+      <p>Write to <a href="mailto:Lukas.Simon@bcm.edu">Lukas.Simon@bcm.edu</a> with a CV and a paragraph on what you would like to build.</p>
+    </article>
+  </div>
+</section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+  <div class="grid two">
+    <article class="card">
+      <h3>Deep Learning</h3>
+      <p>Graduate course materials at the University of St. Thomas, Houston &mdash; notebooks and slides are public.</p>
+      <p class="ref"><a href="https://github.com/lkmklsmn/deep_learning_ust_26">Course repository</a></p>
+    </article>
+    <article class="card">
+      <h3>Training in the group</h3>
+      <p>Trainees leave with a reproducible analysis stack: version-controlled pipelines, written statistical expectations for every QC check, and results that another person can rerun a year later.</p>
+    </article>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="grid two">
+    <article class="card">
+      <h3>Simon Lab</h3>
+      <p>Therapeutic Innovation Center (THINC)<br>
+      Baylor College of Medicine<br>
+      One Baylor Plaza<br>
+      Houston, TX 77030, USA</p>
+      <p><a href="mailto:Lukas.Simon@bcm.edu">Lukas.Simon@bcm.edu</a></p>
+    </article>
+    <article class="card">
+      <h3>Elsewhere</h3>
+      <p class="linklist">
+        <a href="https://thincbcm.org/therapeutic">THINC@BCM</a>
+        <a href="https://www.bcm.edu/people-search/lukas-simon-53766">BCM profile</a>
+        <a href="https://scholar.google.de/citations?user=yZ2MXf0AAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/lkmklsmn">GitHub</a>
+        <a href="https://www.linkedin.com/in/lukas-simon-016a9736/">LinkedIn</a>
+        <a href="https://x.com/lkmklsmn">X</a>
+      </p>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Simon Lab · Therapeutic Innovation Center · Baylor College of Medicine, Houston, TX</p>
+  <p class="fine">Publication metadata retrieved from PubMed (NLM). Citation links resolve to the publisher of record via DOI.</p>
+</footer>
+
+</body>
+</html>
